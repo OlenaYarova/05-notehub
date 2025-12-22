@@ -1,17 +1,17 @@
 
 import css from './App.module.css'
-import SearchBox from '../SearchBox/SearchBox'
-import NoteList from '../NoteList/NoteList'
-import Pagination from '../Pagination/Pagination'
+import SearchBox from '../SearchBox/SearchBox_n'
+import NoteList from '../NoteList/NoteList_n'
+import Pagination from '../Pagination/Pagination_n'
 import React, { useEffect, useState } from 'react'
-import { fetchNotes } from '../../services/NoteService'
+import { fetchNotes } from '../../services/NoteService_n'
 import { useQuery, keepPreviousData } from "@tanstack/react-query";
 import toast, { Toaster } from 'react-hot-toast'
 import {useDebouncedCallback} from 'use-debounce'
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
-import Loader from "../Loader/Loader";
-import Modal from "../Modal/Modal";
-import NoteForm from "../NoteForm/NoteForm";
+import Loader from "../Loader/Loader_n";
+import Modal from "../Modal/Modal_n";
+import NoteForm from "../NoteForm/NoteForm_n";
 
 function App() {
 	const [page, setPage] = useState(1);

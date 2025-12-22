@@ -4,7 +4,7 @@ import type { Note } from '../../types/Note';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import toast from 'react-hot-toast'
 import { deleteNote } from '../../services/NoteService'
-import Loader from '../Loader/loader'
+import Loader from '../Loader/Loader'
 interface NoteListProps{
     notes: Note[];
 }

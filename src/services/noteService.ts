@@ -1,5 +1,5 @@
 import axios from "axios";
-import type { Note, NoteFormValues } from "../types/noteN"; 
+import type { Note, NoteFormValues } from "../types/note"; 
 
 
 const API_KEY = import.meta.env.VITE_NOTEHUB_TOKEN;

@@ -4,7 +4,7 @@ import SearchBox from '../SearchBox/SearchBox'
 import NoteList from '../NoteList/NoteList'
 import Pagination from '../Pagination/Pagination'
 import React, { useEffect, useState } from 'react'
-import { fetchNotes } from '../../services/noteService_n'
+import { fetchNotes } from '../../services/noteService'
 import { useQuery, keepPreviousData } from "@tanstack/react-query";
 import toast, { Toaster } from 'react-hot-toast'
 import {useDebouncedCallback} from 'use-debounce'

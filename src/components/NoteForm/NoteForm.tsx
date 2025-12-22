@@ -2,8 +2,8 @@ import css from "./noteForm.module.css"
 import { Formik, Form, Field, ErrorMessage} from "formik";
 import * as Yup from "yup";
 import toast from "react-hot-toast";
-import { createNote } from "../../services/noteService_n";
-import type { NoteFormValues } from "../../types/note_n";
+import { createNote } from "../../services/noteService";
+import type { NoteFormValues } from "../../types/note.";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import Loader from "../Loader/Loader"
 

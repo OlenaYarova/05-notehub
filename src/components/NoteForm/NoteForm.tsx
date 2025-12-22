@@ -2,10 +2,10 @@ import css from "./noteForm.module.css"
 import { Formik, Form, Field, ErrorMessage} from "formik";
 import * as Yup from "yup";
 import toast from "react-hot-toast";
-import { createNote } from "../../services/NoteService_n";
-import type { NoteFormValues } from "../../types/Note_n";
+import { createNote } from "../../services/NoteService";
+import type { NoteFormValues } from "../../types/Note";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import Loader from "../Loader/Loader_n"
+import Loader from "../Loader/Loader"
 
     interface NoteFormProps {
     onCloseModal: () => void;

@@ -23,13 +23,13 @@ const queryClient = useQueryClient();
 const createNoteMutation = useMutation({
     mutationFn: createNote,
     onSuccess: () => {
-        onCloseModal();
         queryClient.invalidateQueries({ queryKey: ["notes"] });
+        onCloseModal();
         toast.success("Note created successfully");
 
     },
     onError: () => {
-        toast.error("Failer to create the note. Please try again");
+        toast.error("Failed to create the note. Please try again");
     },
 });
 
